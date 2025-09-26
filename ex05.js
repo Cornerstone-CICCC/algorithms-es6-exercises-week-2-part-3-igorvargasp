@@ -6,7 +6,9 @@
 const person = {
   firstName: 'John',
   lastName: 'Doe',
-  // Your code here
+  fullName: function () {
+    return  this.firstName.concat(" ", this.lastName)
+  },
 };
 
 console.log(person.fullName());
